@@ -1,0 +1,404 @@
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card .card-body {
+  display: grid;
+  gap: 8px;
+}
+
+.dash-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tab-btn {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 999px;
+  padding: 10px 18px;
+}
+
+.tab-btn.active {
+  background: var(--charcoal);
+  color: white;
+}
+
+.tab-content {
+  display: grid;
+  gap: 16px;
+}
+
+.rental-header,
+.rental-footer,
+.rental-item-row,
+.summary-row,
+.co-row,
+.co-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rental-footer {
+  align-items: center;
+  margin-top: 16px;
+}
+
+.rental-items,
+.summary-rows {
+  display: grid;
+  gap: 10px;
+}
+
+.maint-form,
+.rental-card,
+.maint-card {
+  width: 100%;
+}
+
+.admin-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.admin-header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-stack {
+  display: grid;
+  gap: 20px;
+  padding-bottom: 36px;
+}
+
+.admin-stat-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.admin-stat-blue .admin-stat-icon-wrap {
+  background: var(--blue-light);
+  color: var(--blue);
+}
+
+.admin-stat-amber .admin-stat-icon-wrap {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.admin-stat-green .admin-stat-icon-wrap {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.admin-stat-red .admin-stat-icon-wrap {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+.admin-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.admin-revenue-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.admin-revenue-strip div {
+  display: grid;
+  gap: 3px;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: var(--warm-white);
+}
+
+.admin-revenue-strip span,
+.admin-muted {
+  color: var(--medium);
+  font-size: 0.9rem;
+}
+
+.admin-revenue-strip strong {
+  font-size: 1.1rem;
+}
+
+.admin-status-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.admin-status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+}
+
+.admin-status-name {
+  text-transform: capitalize;
+  color: var(--charcoal);
+}
+
+.admin-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.admin-action-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  background: white;
+  transition: var(--transition);
+}
+
+.admin-action-card:hover {
+  border-color: var(--charcoal);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.admin-action-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.admin-action-card p {
+  color: var(--medium);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.admin-action-card span {
+  color: var(--accent-dark);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-list-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-list-item {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-list-title {
+  font-weight: 600;
+}
+
+.admin-list-meta {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.admin-alert-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-dark);
+  background: var(--accent-light);
+}
+
+.admin-alert-strip p {
+  margin: 0;
+}
+
+.admin-filter-tabs {
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-filter-tabs .tab-btn {
+  white-space: nowrap;
+}
+
+.admin-rental-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: var(--warm-white);
+  font-size: 0.92rem;
+}
+
+.admin-rental-footer {
+  flex-wrap: wrap;
+}
+
+.admin-status-actions {
+  min-width: 210px;
+}
+
+.admin-status-actions .form-control {
+  min-width: 210px;
+}
+
+.admin-maintenance-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.admin-maintenance-actions .btn {
+  align-self: end;
+  justify-content: center;
+}
+
+.admin-users-panel {
+  margin-bottom: 36px;
+}
+
+.admin-user-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: min(100%, 520px);
+}
+
+.admin-user-search .form-control {
+  min-width: 180px;
+}
+
+.admin-users-list {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-user-item {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-user-main {
+  display: grid;
+  gap: 2px;
+}
+
+.admin-user-actions {
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+  align-content: center;
+}
+
+.admin-pagination {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .admin-summary-grid,
+  .admin-action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+  }
+
+  .admin-revenue-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-list-meta {
+    justify-items: start;
+  }
+
+  .admin-rental-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-status-actions,
+  .admin-status-actions .form-control {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .admin-user-search {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .admin-user-item {
+    flex-direction: column;
+  }
+
+  .admin-user-actions {
+    width: 100%;
+    justify-items: start;
+  }
+
+  .admin-pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-maintenance-actions {
+    grid-template-columns: 1fr;
+  }
+}
